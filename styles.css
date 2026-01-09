@@ -561,6 +561,104 @@ a:hover {
     line-height: 1.6;
 }
 
+/* Verification & Transparency Block */
+.verification-transparency {
+    margin-top: 40px;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border: 2px solid var(--primary);
+    border-radius: var(--radius);
+    padding: 32px;
+}
+
+.transparency-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.transparency-header svg {
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.transparency-header h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--secondary);
+    margin: 0;
+}
+
+.transparency-description {
+    color: var(--text);
+    line-height: 1.7;
+    margin-bottom: 24px;
+    font-size: 0.95rem;
+}
+
+.transparency-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.transparency-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+}
+
+.transparency-btn-primary {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+.transparency-btn-primary:hover {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.transparency-btn-secondary {
+    background: white;
+    color: var(--secondary);
+    border-color: var(--border);
+}
+
+.transparency-btn-secondary:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+.transparency-btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.transparency-note {
+    font-size: 13px;
+    color: var(--text-light);
+    padding-left: 4px;
+}
+
+.transparency-note strong {
+    color: var(--primary-dark);
+    font-weight: 700;
+}
+
 /* Contact Section */
 .contact {
     background: var(--bg-alt);
@@ -820,6 +918,29 @@ a:hover {
 
     .contact-content {
         grid-template-columns: 1fr;
+    }
+
+    .verification-transparency {
+        padding: 24px;
+    }
+
+    .transparency-header h3 {
+        font-size: 1.15rem;
+    }
+
+    .transparency-buttons {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .transparency-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 20px;
+    }
+
+    .transparency-note {
+        text-align: center;
     }
 
     .footer-content {
